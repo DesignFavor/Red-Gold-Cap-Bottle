@@ -27,7 +27,7 @@ export default function App() {
   return (
     <Canvas
       shadows
-      camera={{ position: [0, 0, 10], fov:35 }} // Closer initial position
+      camera={{ position: [0, 0, 10], fov:30 }} // Closer initial position
     >
       {/* Lights */}
       <ambientLight intensity={1} />
