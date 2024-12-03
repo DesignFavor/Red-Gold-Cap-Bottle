@@ -12,9 +12,9 @@ function Rig() {
     easing.damp3(
       state.camera.position,
       [
-        Math.sin(-state.pointer.x) * 3, // Adjusted for a closer horizontal range
-        state.pointer.y * 2.5,          // Adjusted for a closer vertical range
-        8 + Math.cos(state.pointer.x) * 5, // Adjusted to bring the camera closer to the model
+        Math.sin(-state.pointer.x) * 3, 
+        state.pointer.y * 2.5,         
+        8 + Math.cos(state.pointer.x) * 5, 
       ],
       0.2,
       delta
@@ -27,7 +27,7 @@ export default function App() {
   return (
     <Canvas
       shadows
-      camera={{ position: [0, 0, 10], fov:30 }} // Closer initial position
+      camera={{ position: [0, 0, 10], fov:30 }} 
     >
       {/* Lights */}
       <ambientLight intensity={1} />
@@ -54,7 +54,7 @@ export default function App() {
       />
 
       {/* Environment */}
-      <Environment files="./ShowcaseEnvy.hdr" />
+      <Environment files="./ShowcaseEnvy.hdr"  />
 
       {/* Camera Rig */}
       <Rig />
